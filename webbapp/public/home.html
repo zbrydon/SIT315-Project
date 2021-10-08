@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Zac Brydon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Sensors</h1>
+        <br/>
+        <div>
+            <button id="current" style="margin-right: 20px;">Sort by Current Temperature</button>
+            <button id="avg">Sort by Average Temperature</button>
+        </div>
+        <br/>
+        <table id="devices">
+            <thead>
+                <tr>
+                    <th><div  style="margin-right: 20px;">ID</div></th>
+                    <th ><div  style="margin-right: 20px;">Current Temperature</div></th>
+                    <th><div  style="margin-right: 20px;">Average Temperature</div></th>
+                    <th><div  style="margin-right: 20px;">Last Reading</div></th>
+                    <th><div  style="margin-right: 20px;">Location: Latitude</div></th>
+                    <th><div  style="margin-right: 20px;">Location: Longitude</div></th>
+                    
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/poppe
+r.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
